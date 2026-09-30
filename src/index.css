@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #D4AF37;
+    --gold-light: #F3E5AB;
+    --gold-dark: #996515;
+    --navy-darkest: #050C16;
+    --navy-card: #0A192F;
+    --navy-surface: #112240;
+    --navy-border: #1E3A5F;
+  }
+}
+
+/* Custom metallic gold text & gradient utilities */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF6D5 0%, #D4AF37 45%, #F59E0B 85%, #AA771C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #F9E79F 0%, #D4AF37 50%, #B78727 100%);
+}
+
+.border-gold-glow {
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.gold-badge {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(183, 135, 39, 0.05) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: #F3E5AB;
+}
+
+/* Glassmorphism for dark navy */
+.glass-navy {
+  background: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 58, 95, 0.6);
+}
+
+/* Print styling for invoices */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-invoice, #printable-invoice * {
+    visibility: visible;
+  }
+  #printable-invoice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: black !important;
+    background: white !important;
+  }
+}

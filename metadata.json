@@ -1,0 +1,6 @@
+{
+  "name": "Apex Union — Multi-Cooperative Skilled Worker Platform",
+  "description": "Connecting Skilled Workers, Cooperatives and Customers on One Digital Platform with Multilingual AI Understanding and Transparent Matching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
